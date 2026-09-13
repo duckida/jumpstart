@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://qoqlqyifuqrc"]
+[gd_scene format=4 uid="uid://qoqlqyifuqrc"]
 
 [ext_resource type="Texture2D" uid="uid://b8863bif5sou8" path="res://icon.svg" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://be56pgj6c3oiq" path="res://pastelgreen.jpg" id="2_h2yge"]
@@ -6,16 +6,24 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_podo4"]
 size = Vector2(106, 107)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("2_h2yge")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:0/0 = 0
 9:0/0 = 0
 10:0/0 = 0
@@ -71,13 +79,21 @@ texture = ExtResource("2_h2yge")
 60:0/0 = 0
 61:0/0 = 0
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:1/0 = 0
 9:1/0 = 0
 10:1/0 = 0
@@ -133,13 +149,21 @@ texture = ExtResource("2_h2yge")
 60:1/0 = 0
 61:1/0 = 0
 0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:2/0 = 0
 9:2/0 = 0
 10:2/0 = 0
@@ -6891,8 +6915,9 @@ texture = ExtResource("2_h2yge")
 60:110/0 = 0
 61:110/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_podo4"]
-sources/0 = SubResource("TileSetAtlasSource_1bvp3")
+[sub_resource type="TileSet" id="TileSet_7mycd"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 
 [node name="Node" type="Node" unique_id=2027025859]
 
@@ -6908,4 +6933,5 @@ position = Vector2(54, 53.5)
 shape = SubResource("RectangleShape2D_podo4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Player" unique_id=425239191]
-tile_set = SubResource("TileSet_podo4")
+tile_map_data = PackedByteArray("AAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAAAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAAKAAcAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAUAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAALAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAANAAgAAAAAAAAAAAAOAAgAAAAAAAAAAAAPAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAARAAgAAAAAAAAAAAASAAgAAAAAAAAAAAATAAgAAAAAAAAAAAAUAAgAAAAAAAAAAAAVAAgAAAAAAAAAAAAWAAgAAAAAAAAAAAAXAAgAAAAAAAAAAAAXAAcAAAAAAAAAAAAYAAcAAAAAAAAAAAAYAAgAAAAAAAAAAAAZAAgAAAAAAAAAAAAaAAgAAAAAAAAAAAAbAAgAAAAAAAAAAAAcAAgAAAAAAAAAAAAdAAgAAAAAAAAAAAAeAAgAAAAAAAAAAAAfAAgAAAAAAAAAAAAgAAcAAAAAAAAAAAAhAAcAAAAAAAAAAAAiAAcAAAAAAAAAAAAjAAcAAAAAAAAAAAAkAAcAAAAAAAAAAAAlAAcAAAAAAAAAAAAmAAcAAAAAAAAAAAAnAAcAAAAAAAAAAAAoAAcAAAAAAAAAAAApAAcAAAAAAAAAAAAqAAcAAAAAAAAAAAArAAcAAAAAAAAAAAAsAAcAAAAAAAAAAAAtAAcAAAAAAAAAAAAtAAYAAAAAAAAAAAAuAAYAAAAAAAAAAAAvAAYAAAAAAAAAAAAvAAUAAAAAAAAAAAAwAAUAAAAAAAAAAAAwAAQAAAAAAAAAAAAxAAQAAAAAAAAAAAAyAAQAAAAAAAAAAAAzAAQAAAAAAAAAAAA0AAQAAAAAAAAAAAA1AAQAAAAAAAAAAAA2AAQAAAAAAAAAAAA3AAQAAAAAAAAAAAA3AAUAAAAAAAAAAAA4AAUAAAAAAAAAAAA5AAUAAAAAAAAAAAA5AAYAAAAAAAAAAAA6AAYAAAAAAAAAAAA6AAcAAAAAAAAAAAA7AAcAAAAAAAAAAAA7AAgAAAAAAAAAAAA8AAgAAAAAAAAAAAA8AAkAAAAAAAAAAAA9AAkAAAAAAAAAAAA9AAoAAAAAAAAAAAA+AAoAAAAAAAAAAAA+AAsAAAAAAAAAAAA/AAsAAAAAAAAAAABAAAsAAAAAAAAAAABBAAoAAAAAAAAAAABCAAkAAAAAAAAAAABCAAgAAAAAAAAAAABDAAgAAAAAAAAAAABDAAcAAAAAAAAAAABEAAYAAAAAAAAAAABFAAUAAAAAAAAAAABGAAUAAAAAAAAAAABGAAQAAAAAAAAAAABHAAQAAAAAAAAAAABHAAMAAAAAAAAAAABIAAMAAAAAAAAAAABJAAMAAAAAAAAAAABKAAMAAAAAAAAAAAA=")
+tile_set = SubResource("TileSet_7mycd")
