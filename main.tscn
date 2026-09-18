@@ -1,10 +1,11 @@
 [gd_scene format=4 uid="uid://qoqlqyifuqrc"]
 
 [ext_resource type="Texture2D" uid="uid://dut3jyelt0gr0" path="res://soup.png" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://5debcl6mbdih" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://be56pgj6c3oiq" path="res://pastelgreen.jpg" id="2_h2yge"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_podo4"]
-size = Vector2(57, 86.5)
+size = Vector2(45, 63.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xm2m"]
 texture = ExtResource("2_h2yge")
@@ -6922,14 +6923,15 @@ sources/0 = SubResource("TileSetAtlasSource_0xm2m")
 [node name="Node" type="Node" unique_id=2027025859]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=2009701843]
+script = ExtResource("1_h2yge")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=687790057]
-position = Vector2(40, 83.7046)
-scale = Vector2(0.11905496, 0.12530328)
+position = Vector2(31.826168, 96.7046)
+scale = Vector2(0.09432325, 0.09755517)
 texture = ExtResource("1_0xm2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=176829892]
-position = Vector2(43.5, 84.25)
+position = Vector2(35.5, 95.75)
 shape = SubResource("RectangleShape2D_podo4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=425239191]
