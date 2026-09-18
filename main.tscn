@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://5debcl6mbdih" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://be56pgj6c3oiq" path="res://pastelgreen.jpg" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://s40nu5uxqld3" path="res://clean-background.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://b2lc5ixdprnt" path="res://clouds/cloud1.webp" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://s7c24f61ufyp" path="res://clouds/cloud2.webp" id="5_7mycd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_podo4"]
 size = Vector2(45, 63.5)
@@ -6943,13 +6945,31 @@ position_smoothing_speed = 6.0
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=363734793]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=841846470]
+[node name="Background" type="ParallaxLayer" parent="ParallaxBackground" unique_id=841846470]
 motion_mirroring = Vector2(2940, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1558107798]
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Background" unique_id=1558107798]
 position = Vector2(511, 50.999954)
 scale = Vector2(1.3524904, 1.6597744)
 texture = ExtResource("3_1bvp3")
+
+[node name="Cloud1" type="ParallaxLayer" parent="ParallaxBackground" unique_id=121474481]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Cloud1" unique_id=497538837]
+position = Vector2(-117, -35)
+scale = Vector2(0.58674306, 0.7324324)
+texture = ExtResource("4_lquwl")
+
+[node name="Cloud2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1980014646]
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/Cloud2" unique_id=1259908948]
+position = Vector2(534, -58)
+scale = Vector2(0.066054456, 0.095450304)
+texture = ExtResource("5_7mycd")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=425239191]
 tile_map_data = PackedByteArray("AAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAAAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAAJAAgAAAAAAAAAAAAKAAgAAAAAAAAAAAAKAAcAAAAAAAAAAAAKAAYAAAAAAAAAAAAKAAUAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAALAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAANAAgAAAAAAAAAAAAOAAgAAAAAAAAAAAAPAAgAAAAAAAAAAAAQAAgAAAAAAAAAAAARAAgAAAAAAAAAAAASAAgAAAAAAAAAAAATAAgAAAAAAAAAAAAUAAgAAAAAAAAAAAAVAAgAAAAAAAAAAAAWAAgAAAAAAAAAAAAXAAgAAAAAAAAAAAAXAAcAAAAAAAAAAAAYAAcAAAAAAAAAAAAYAAgAAAAAAAAAAAAZAAgAAAAAAAAAAAAaAAgAAAAAAAAAAAAbAAgAAAAAAAAAAAAcAAgAAAAAAAAAAAAdAAgAAAAAAAAAAAAeAAgAAAAAAAAAAAAfAAgAAAAAAAAAAAAgAAcAAAAAAAAAAAAhAAcAAAAAAAAAAAAiAAcAAAAAAAAAAAAjAAcAAAAAAAAAAAAkAAcAAAAAAAAAAAAlAAcAAAAAAAAAAAAmAAcAAAAAAAAAAAAnAAcAAAAAAAAAAAAoAAcAAAAAAAAAAAApAAcAAAAAAAAAAAAqAAcAAAAAAAAAAAArAAcAAAAAAAAAAAAsAAcAAAAAAAAAAAAtAAcAAAAAAAAAAAAtAAYAAAAAAAAAAAAuAAYAAAAAAAAAAAAvAAYAAAAAAAAAAAAvAAUAAAAAAAAAAAAwAAUAAAAAAAAAAAAwAAQAAAAAAAAAAAAxAAQAAAAAAAAAAAAyAAQAAAAAAAAAAAAzAAQAAAAAAAAAAAA0AAQAAAAAAAAAAAA1AAQAAAAAAAAAAAA2AAQAAAAAAAAAAAA3AAQAAAAAAAAAAAA3AAUAAAAAAAAAAAA4AAUAAAAAAAAAAAA5AAUAAAAAAAAAAAA5AAYAAAAAAAAAAAA6AAYAAAAAAAAAAAA6AAcAAAAAAAAAAAA7AAcAAAAAAAAAAAA7AAgAAAAAAAAAAAA8AAgAAAAAAAAAAAA8AAkAAAAAAAAAAAA9AAkAAAAAAAAAAAA9AAoAAAAAAAAAAAA+AAoAAAAAAAAAAAA+AAsAAAAAAAAAAAA/AAsAAAAAAAAAAABAAAsAAAAAAAAAAABBAAoAAAAAAAAAAABCAAkAAAAAAAAAAABCAAgAAAAAAAAAAABDAAgAAAAAAAAAAABDAAcAAAAAAAAAAABEAAYAAAAAAAAAAABFAAUAAAAAAAAAAABGAAUAAAAAAAAAAABGAAQAAAAAAAAAAABHAAQAAAAAAAAAAABHAAMAAAAAAAAAAABIAAMAAAAAAAAAAABJAAMAAAAAAAAAAABKAAMAAAAAAAAAAAA=")
