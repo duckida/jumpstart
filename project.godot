@@ -13,7 +13,11 @@ config_version=5
 config/name="jumpstart"
 run/main_scene="uid://qoqlqyifuqrc"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+
+[autoload]
+
+EventController="*uid://cxndnje8js15j"
+GameController="*uid://c2v0gto22djpb"
 
 [display]
 
